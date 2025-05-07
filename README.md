@@ -19,12 +19,9 @@ Repositório com exemplos e exercícios de algoritmos desenvolvidos para a unida
 - Desenvolver habilidades em resolução de problemas e documentação técnica
 
 ## Como Usar
-1. Clone o repositório: `git clone <URL>`
+1. Clone o repositório: https://github.com/heitorpita/SenacCodeQuest.git
 2. Explore os diretórios com exemplos e exercícios
 3. Teste os algoritmos com ferramentas de sua escolha
-
-## Contribuições
-Contribuições são bem-vindas! Abra um *issue* ou envie um *pull request*.
 
 ## Licença
 MIT
