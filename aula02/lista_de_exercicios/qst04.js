@@ -3,4 +3,6 @@ let numero2 = 2;
 
 let divis = 10 / 2;
 
-console.log(divis)
+console.log(divis);
+
+//Guarde dois numeros e calcule a divisão entre eles
