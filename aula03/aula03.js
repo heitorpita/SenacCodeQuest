@@ -1,8 +1,7 @@
-let x = 10;
-let y = 10;
+const idade = 15;
 
-if (x === y) {
-    console.log("x é igual a y");
+if (idade >= 18) {
+    console.log(`Já sou de maior e tenho ${idade} anos`)
 } else {
-    console.log("x é diferente de y");
-}
+    console.log(`Sou de menor e tenho ${idade} anos`)
+};
