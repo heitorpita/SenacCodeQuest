@@ -24,16 +24,21 @@ do {
   let preco = 0;
 
   switch (codigo) {
-    case 1: preco = 1.50; 
-    break;
-    case 2: preco = 1.00; 
-    break;
-    case 3: preco = 1.30; 
-    break;
-    case 4: preco = 1.40; 
-    break;
-    case 5: preco = 1.20; 
-    break;
+    case 1:
+      preco = 1.5;
+      break;
+    case 2:
+      preco = 1.0;
+      break;
+    case 3:
+      preco = 1.3;
+      break;
+    case 4:
+      preco = 1.4;
+      break;
+    case 5:
+      preco = 1.2;
+      break;
     default:
       console.log("Código inválido.");
       continue;
@@ -43,7 +48,6 @@ do {
   totalGeral += total;
 
   console.log(`Item adicionado. Subtotal: R$ ${total.toFixed(2)}\n`);
-
 } while (true);
 
 console.log(`Total geral do pedido: R$ ${totalGeral.toFixed(2)}`);
