@@ -7,3 +7,7 @@ for (i = 0; i < dias.length; i++) {
         
     }
 }
+
+// Horários de aula
+// Exiba os horários de 4 aulas para cada dia útil da semana.
+// Dica: o primeiro laço representa os dias, o segundo os horário

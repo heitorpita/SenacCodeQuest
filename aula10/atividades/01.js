@@ -7,5 +7,10 @@ for (let i = 0; i < camisa.length; i++) {
         console.log(`${camisa[i]} e ${calca[j]}`);
         
     }
-    
+ 
 }
+
+
+// 1. Combinação de roupas
+// Liste todas as combinações possíveis entre camisetas e calças.
+// Dica: use dois laços 'for', um para cada tipo de roupa

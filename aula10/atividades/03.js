@@ -10,3 +10,7 @@ for (i = 0; i < proteina.length; i++) {
     }
 
 }
+
+// Cardápio de combinações
+// Mostre todas as possíveis combinações de pratos com acompanhamentos.
+// Dica: dois vetores e dois laços 'for'

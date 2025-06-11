@@ -8,3 +8,8 @@ for (i = 0; i < dias.length; i++) {
     }
 
 }
+
+
+// Agenda de compromissos
+// Exiba horários disponíveis a cada meia hora entre 08:00 e 10:00, para cada dia da semana.
+// Dica: use um vetor de horários e um de dias
