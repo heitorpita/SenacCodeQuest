@@ -23,3 +23,6 @@ console.log(lista[0]);
 // }
 // console.log(lista);
 // console.log(lista[9]);
+
+
+// 04. MAIOR NUMERO RECEBA 10 NUMEROS E EXIBA QUAL FOI O MAIOR DELES

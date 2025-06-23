@@ -17,3 +17,5 @@ if (found == nomee) {
     console.log("nome NAO esta na lista");
     
 }
+
+// 03. PROCURAR UM NOME O USUARIO DIGITA UM NOME PARA BUSCAR MOSTRE SE ELE EXISTA NO ARRAY
