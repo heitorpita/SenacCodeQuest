@@ -1,4 +1,4 @@
-// .pop .unshift .shift .length .indexOf .includes .reverse
+// .pop .unshift .shift .length .indexOf .includes .reverse .map .filter .find
 
 let estados = ["SP", "RN", "PE", "PB", "RJ", "RS"]
 
