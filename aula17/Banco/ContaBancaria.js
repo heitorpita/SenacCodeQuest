@@ -31,9 +31,4 @@ class ContaBancaria {
     }
 
 }
-
-let conta = new ContaBancaria(3000);
-
-
-conta.sacar(5000);
-console.log(conta.getSaldo()); 
+module.exports = ContaBancaria
