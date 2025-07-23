@@ -21,3 +21,7 @@ console.log(professor1.apresentar());
 console.log(pessoa.apresentar());
 
 
+console.log(aluno1);
+
+
+console.log(professor1);
