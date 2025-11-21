@@ -1,27 +1,33 @@
-# Repositório de Algoritmos
+# SenacCodeQuest
 
-## Descrição
-Repositório com exemplos e exercícios de algoritmos desenvolvidos para a unidade curricular UC6: Desenvolver Algoritmos. Focado em lógica de programação, estruturas de dados, sub-rotinas e validação de algoritmos, seguindo requisitos de projetos de software.
+Repositório com todos os códigos e projetos desenvolvidos durante o curso Técnico em Informática para Internet no Senac.
 
-## Conteúdo
-- Algoritmos em pseudocódigo, fluxogramas e narrativa
-- Manipulação de variáveis, vetores e matrizes
-- Estruturas condicionais e de repetição
-- Funções e procedimentos reutilizáveis
-- Testes de mesa e depuração
-- Aplicação de metodologias ágeis
-- Exemplos de UML (caso de uso e classes)
+---
 
-## Objetivos
-- Estruturar algoritmos com base em requisitos funcionais
-- Validar soluções com entradas e saídas
-- Aplicar lógica computacional e metodologias ágeis
-- Desenvolver habilidades em resolução de problemas e documentação técnica
+## Sobre o Projeto
 
-## Como Usar
-1. Clone o repositório: https://github.com/heitorpita/SenacCodeQuest.git
-2. Explore os diretórios com exemplos e exercícios
-3. Teste os algoritmos com ferramentas de sua escolha
+Este repositório reúne exercícios, exemplos e projetos práticos focados em lógica de programação, desenvolvimento web e integração de tecnologias modernas usadas no desenvolvimento full stack.
 
-## Licença
-MIT
+---
+
+## Tecnologias Utilizadas
+
+- JavaScript
+- Node.js
+- Express
+- React.js
+- JWT (JSON Web Tokens) para autenticação
+- PostgreSQL como banco de dados relacional
+- Figma para design e prototipação
+
+---
+
+## Estrutura e Conteúdo
+
+- Algoritmos e lógica de programação
+- Back-end com Node.js, Express e banco PostgreSQL
+- Front-end com React.js
+- Autenticação e segurança via JWT
+- Design de interfaces com Figma como suporte visual
+
+---
