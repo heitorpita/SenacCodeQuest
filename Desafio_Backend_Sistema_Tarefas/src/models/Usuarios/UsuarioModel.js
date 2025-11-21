@@ -3,10 +3,15 @@ import { usuario } from "../../data/Usuarios/UsuarioBanco.js"
 
 export default class UsuarioModel {
 
-	static listar() {
+    static listar() {
 		return usuario;
 
 	}
+
+
+    static buscarPorId(id) {
+    return usuario.find(u => u.id === id);
+    }
 
     static criar(usuarios) {
         usuario.push(usuarios);
