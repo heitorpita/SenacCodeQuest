@@ -8,6 +8,10 @@ export default class TarefaModel {
 
 	}
 
+	static buscarPorId(id){
+		return tarefa.find(t => t.id === id);
+	}
+
 	static criar(tarefas) {
 		tarefa.push(tarefas);
 		return tarefas;
