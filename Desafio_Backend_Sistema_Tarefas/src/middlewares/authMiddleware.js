@@ -2,12 +2,12 @@ import jwt from "jsonwebtoken";
 
 export function authenticator(req, res, next){
 
-    const autHeader = req.headersp["autorizacao"];
+    const autHeader = req.headers["authorization"];
 
     const token = autHeader && autHeader.split(" ")[1];
 
     if(!token){
-        res.status(401).json({msg: "ACESSO NEGADO "})
+        res.status(401).json({msg: "ACESSO NEGADO"})
         return;
 
     }
@@ -19,7 +19,7 @@ export function authenticator(req, res, next){
         next()
 
     } catch (error) {
-        res.statu(403).json({msg: "erro interno na autorizacao", erro: error.message})
+        res.status(403).json({msg: "erro interno na autorizacao", erro: error.message})
     }
 
 }

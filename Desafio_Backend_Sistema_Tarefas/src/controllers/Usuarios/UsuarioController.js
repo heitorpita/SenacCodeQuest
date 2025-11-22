@@ -28,11 +28,6 @@ export default class UsuarioController {
                 email: email,
                 senha: senhaHash,
                 cep: cep,
-                rua: buscaCep.data.logradouro,
-                numero: numero,
-                bairro: buscaCep.data.bairro,
-                cidade: buscaCep.data.localidade,
-                estado: buscaCep.data.uf
             }
             const userCriado = UsuarioModel.criar(novoUser);
             res.status(201).json(userCriado);
@@ -72,16 +67,29 @@ export default class UsuarioController {
         }
     }
 
-    static perfil(req, res){
-        try {
-            const usuario = req.usuario;
-            if(!usuario){
-                res.status(400).json({msg: "nenhum dado de usuario para exibir"});
-                return
-            }
-        } catch (error) {
-            res.status(500).json({msg: "Erro interno ao exibir os dados do user", erro: error.message});
+   static perfil(req, res){
+    try {
+        const usuario = req.usuario;
+
+        if(!usuario){
+            return res.status(400).json({msg: "nenhum dado de usuario para exibir"});
         }
+
+        return res.status(200).json({
+            msg: "Dados do usuário",
+            usuario: usuario
+        });
+
+    } catch (error) {
+        return res.status(500).json({
+            msg: "Erro interno ao exibir os dados do user",
+            erro: error.message
+        });
     }
+}
+
+
+    
+
 
 }
