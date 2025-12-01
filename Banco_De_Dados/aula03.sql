@@ -32,3 +32,36 @@ update pessoas set idade = 35 where nome = 'Joao victor'
 delete from pessoas where id = 3;
 
 
+/**
+ * DATE
+ * TIME
+ * TIMESTAMP - DATA E HORA
+ * TIMESTAMPTZ - FUSO HORARIO
+ * INTERVAL - INTERVALOS DE TEMPOS
+ */
+
+
+/**
+ * BOOLEAN
+ * TRUE
+ * FALSE
+ * NULL
+ */
+
+
+create table livraria(
+
+	id serial primary key ,
+	preco decimal(10, 2) not null,
+	titulo varchar(50) not null,
+	data_publicacao date,
+	disponivel boolean,
+	autor varchar(100)
+);
+
+insert into livraria(preco, titulo, data_publicacao, disponivel, autor) values (50.00, 'PRISIONEIRO DE AZKABAN', '2002-05-20', true, 'JK ROWLING');
+
+
+
+
+
