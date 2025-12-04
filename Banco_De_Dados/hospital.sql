@@ -60,3 +60,48 @@ INSERT INTO historico_internacoes (paciente_id, data_saida) values (1, '2024-12-
 
 
 INSERT INTO anotacoes_administrativas (paciente_id) values (1), (2);
+
+
+
+//ATIVIDADE 
+
+create table clientes (
+    id serial primary key,
+    nome varchar(100) not null,
+    email varchar(150) not null unique,
+    telefone varcar(20) not null,
+    ativo boolean not null default true
+);
+
+
+create table pedidos(
+
+	id serial primary key,
+	cliente_id integer not null,
+	data_pedido date not null,
+	valor_total decimal(10,2) not null,
+	status varchar(50) not null default 'pendente',
+);
+
+create table produtos (
+	
+	id serial primary key,
+	nome varchar(150) not null,
+	preco decimal(10,2) not null,
+	estoque integer not null,
+	
+);
+
+create table itens_pedido (
+
+	id serial primary key,
+	pedido_id integer not null,
+	produto_id integer not null,
+	quantidade integer not null,
+	preco_unitario decimal(10,2) not null,
+	
+	constraint fk_itens_pedido foreign key (pedido_id) references pedidos(id) on delete cascade,
+	constraint fk_itens_produto foreign key (produto_id) references produtos(id) on delete restrict,
+
+
+);
