@@ -77,4 +77,39 @@ select preco_medio, qtd_produtos from (
 
 select nome from cliente_leitura where id in (select cliente_id from vendas_leitura where produto_id = 3)
 
+-- criando log(registro / historico)
 
+create table vendas_log(
+
+	id serial primary key,
+	venda_id int,
+	data_operacao timestamp default current_timestamp,
+	operacao varchar(10)
+
+);
+
+
+create or replace function fn_log_vendas() returns trigger as $$ 
+begin
+	insert into vendas_log (venda_id, operacao)	
+	values (new.id, tg_op); --tg_op registra INSERT, UPDATE, DELETE
+	return new;
+end
+$$ language plpgsql;
+
+-- trigger ( queme executa a funcao para salvar a info do log)
+
+create trigger trg_log_vendas
+after insert
+on vendas_leitura
+for each row
+execute function fn_log_vendas();
+
+
+-- inserindo dados
+insert into vendas_leitura(cliente_id, produto_id, quantidade)
+values(1, 2, 3)
+
+-- filtro
+
+select * from vendas_log
