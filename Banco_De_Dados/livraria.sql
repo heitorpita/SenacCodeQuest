@@ -63,4 +63,18 @@ select count(*) as quantidade_clientes from cliente_leitura
 --total por clientes
 select cliente_id, sum(quantidade) as total_itens from vendas_leitura group by cliente_id;
 
+-- subconsultas
+
+select * from livraria_leitura where preco > (select avg(preco) from livraria_leitura);
+
+select preco_medio, qtd_produtos from (
+
+	select avg(preco) as preco_medio, count(*) as qtd_produtos
+	from livraria_leitura
+
+) as resumo;
+
+
+select nome from cliente_leitura where id in (select cliente_id from vendas_leitura where produto_id = 3)
+
 
