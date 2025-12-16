@@ -4,7 +4,7 @@ import pkg from 'pg';
 
 const { Pool } = pkg;
 
-const pool = new Pool({
+const db = new Pool({
 
     host: process.env.DB_HOST,
     user: process.env.DB_PASSWORD,
@@ -13,4 +13,4 @@ const pool = new Pool({
 
 })
 
-export default pool;
+export default db;
