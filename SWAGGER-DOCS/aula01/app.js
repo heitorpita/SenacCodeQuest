@@ -2,6 +2,7 @@ import express from 'express';
 import 'dotenv/config';
 import swaggerUI from "swagger-ui-express";
 import { swaggerSpec } from './src/docs/swagger.js';
+import UsuarioRoutes from './src/routes/UsuarioRoutes.js';
 
 const app = express();
 const PORT = process.env.PORT;
@@ -9,7 +10,7 @@ const PORT = process.env.PORT;
 app.use(express.json())
 
 app.use("/docs", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
-
+app.use('/usuarios', UsuarioRoutes);
 app.get('/', (req, res) => {
   res.status(200).send('Hello, World!');
 });
