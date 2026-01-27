@@ -1,61 +1,115 @@
-# SenacCodeQuest
+# 🎓 SenacCodeQuest
 
-Repositório central dos exercícios, desafios e projetos feitos durante o curso Técnico em Informática para Internet no Senac. Contém múltiplos subprojetos (APIs, front-ends, exemplos de POO, SQL, etc.).
+Repositório com todos os exercícios, desafios e projetos desenvolvidos durante o curso **Técnico em Informática para Internet** no Senac.
 
-**Objetivo:** arquivar o trabalho do curso, facilitar revisões futuras e servir como portfólio de aprendizado.
+## 📚 Sobre
 
----
-
-**Como este repositório está organizado**
-- **`Desafios/`**: projetos extracurriculares e desafios em Node.js e outros stacks.
-- **`UC01-LOGICA/`, `UC02-BACKEND/`, `UC03-BACK&DB/`, `UC04-FRONTEND/`**: pasta por unidade curricular com exemplos e exercícios.
-- **`POO/`** e outras pastas com aulas organizadas por tema.
-- **`Banco_De_Dados/`**: scripts SQL e exemplos de schema.
-
-Cada subpasta pode ser um projeto independente com seu próprio `package.json` e possivelmente seu próprio `.gitignore`.
+Este repositório serve como:
+- 📁 Arquivo organizado de todo o aprendizado do curso
+- 💼 Portfólio de projetos para mostrar evolução
+- 📖 Material de consulta para revisões futuras
 
 ---
 
-**Como rodar projetos Node.js nesta coleção**
-- Entre na pasta do projeto que deseja executar, por exemplo: `cd Desafios/catalogo_musica_api`
-- Instale dependências (se houver): `npm install` ou `pnpm install` ou `yarn`
-- Rode com: `npm start` ou `node app.js` — siga o `README.md` local de cada subprojeto para instruções específicas.
+## 🗂️ Estrutura do Repositório
 
-Observação: alguns projetos são experimentos didáticos e podem faltar instruções completas; confira o `README` dentro da pasta do subprojeto.
-
----
-
-**Sobre o `.gitignore` (explicação curta e prática)**
-- O arquivo `.gitignore` que fica na raiz do repositório aplica-se a todo o repositório. Padrões como `node_modules/` sem uma barra inicial correspondem a qualquer pasta chamada `node_modules` em qualquer subdiretório, logo todos os `node_modules` serão ignorados por esse padrão.
-- Se um `node_modules` já foi versionado (ou seja, já foi commitado antes de o `.gitignore` existir), o `.gitignore` não remove automaticamente esses arquivos do histórico — eles continuam no repositório até serem removidos do índice Git.
-
-Comandos úteis (PowerShell) para detectar e remover `node_modules` já adicionados ao git index:
-```powershell
-# listar arquivos rastreados que contenham 'node_modules'
-git ls-files | Select-String 'node_modules'
-
-# remover do índice (apenas desindexa, não deleta localmente) um node_modules específico
-git rm -r --cached path\to\project\node_modules
-
-# para remover todos os node_modules rastreados (exemplo com busca recursiva em PowerShell)
-Get-ChildItem -Directory -Recurse -Force -Filter node_modules | ForEach-Object { git rm -r --cached --ignore-unmatch $_.FullName }
-
-# depois commit e push
-git commit -m "Remove node_modules do repositório" && git push
+```
+SenacCodeQuest/
+├── 📂 Banco_De_Dados/       # Scripts SQL e modelagem de banco
+├── 📂 Desafios/             # Projetos práticos e desafios
+│   ├── catalogo_musica_api/ # API REST de catálogo de músicas
+│   ├── feed_api/            # API de feed social com Prisma
+│   ├── MobilityX/           # Sistema de mobilidade urbana
+│   └── Desafio_Backend_.../  # Sistema de gerenciamento de tarefas
+├── 📂 POO/                  # Programação Orientada a Objetos
+├── 📂 SWAGGER-DOCS/         # Documentação de APIs com Swagger
+├── 📂 UC01-LOGICA/          # Lógica de Programação (JavaScript)
+├── 📂 UC02-BACKEND/         # Desenvolvimento Backend (Node.js/Express)
+├── 📂 UC03-BACK&DB/         # Backend + Banco de Dados (Prisma/PostgreSQL)
+└── 📂 UC04-FRONTEND/        # Desenvolvimento Frontend (React/Vite)
+    ├── adotepolvo/          # Projeto de adoção de polvos 🐙
+    ├── CatalogoLivrosReact/ # Catálogo de livros em React
+    ├── React-Senac/         # Exercícios React do curso
+    └── SuperEventos-React/  # Sistema de eventos
 ```
 
 ---
 
-**Boas práticas recomendadas para este repositório**
-- Mantenha um `.gitignore` na raiz com padrões gerais (`node_modules/`, `.env`, `dist/`, etc.).
-- Projetos que precisam de regras específicas podem ter um `.gitignore` local — as regras se somam (o Git usa a união de padrões).
-- Nunca commit arquivos sensíveis como chaves, senhas ou arquivos `.env`. Use variáveis de ambiente ou serviços secretos.
+## 🛠️ Tecnologias Utilizadas
+
+| Categoria | Tecnologias |
+|-----------|-------------|
+| **Frontend** | React, Vite, HTML, CSS, JavaScript |
+| **Backend** | Node.js, Express.js |
+| **Banco de Dados** | PostgreSQL, MySQL, Prisma ORM |
+| **Documentação** | Swagger/OpenAPI |
+| **Versionamento** | Git, GitHub |
 
 ---
 
-Se quiser, eu posso:
-- Atualizar/normalizar o `.gitignore` da raiz com um padrão para monorepo.
-- Procurar `node_modules` já comitados e gerar comandos para removê-los com segurança.
-- Gerar README individuais para subprojetos mais importantes (ex.: `Desafios/catalogo_musica_api`).
+## 🚀 Como Executar os Projetos
 
-Diga qual dessas opções você prefere que eu faça em seguida.
+### Projetos Node.js (Backend/APIs)
+
+```bash
+# 1. Entre na pasta do projeto
+cd Desafios/catalogo_musica_api
+
+# 2. Instale as dependências
+npm install
+
+# 3. Execute o projeto
+npm start
+# ou
+node app.js
+```
+
+### Projetos React (Frontend)
+
+```bash
+# 1. Entre na pasta do projeto
+cd UC04-FRONTEND/adotepolvo
+
+# 2. Instale as dependências
+npm install
+
+# 3. Execute em modo desenvolvimento
+npm run dev
+```
+
+> ⚠️ Cada subprojeto pode ter seu próprio `README.md` com instruções específicas.
+
+---
+
+## 📂 Detalhes das Pastas
+
+### 🎯 Desafios
+Projetos práticos desenvolvidos como desafios do curso:
+- **catalogo_musica_api** - API REST para gerenciamento de músicas
+- **feed_api** - Rede social simplificada com posts e comentários
+- **MobilityX** - Sistema completo de gestão de veículos e vendas
+- **Desafio_Backend_Sistema_Tarefas** - CRUD de tarefas com autenticação
+
+### 📘 Unidades Curriculares (UC)
+- **UC01-LOGICA** - Fundamentos de lógica com JavaScript
+- **UC02-BACKEND** - Criação de APIs com Node.js e Express
+- **UC03-BACK&DB** - Integração backend com bancos de dados
+- **UC04-FRONTEND** - Interfaces web com React
+
+### 🎨 POO
+Exercícios de Programação Orientada a Objetos:
+- Classes, herança, polimorfismo
+- Projetos práticos (Banco, Livro, Jogos)
+
+---
+
+## 👤 Autor
+
+**Heitor Pita**  
+Estudante de Técnico em Informática para Internet - Senac
+
+---
+
+## 📄 Licença
+
+Este repositório é para fins educacionais.
