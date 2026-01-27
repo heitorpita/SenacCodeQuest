@@ -1,0 +1,46 @@
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1E90FF;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+#missao {
+    color: #32cd32;
+}
+
+#proximos {
+    color: #FFA07A;
+    background-color: #FFFFE0;
+}
+
+#contato {
+    color: #20B2AA;
+}
+
+span {
+    font-weight: bold;
+    color: rgb(89, 0, 255);
+}
+
+.fora {
+    background-color: #AFEEEE;
+    padding: 5px;
+}
+
+.data{
+    font-weight: bold;
+    color: red;
+}
+
+.sec {
+background-color: #f8f3f3;
+padding: 10px;
+}

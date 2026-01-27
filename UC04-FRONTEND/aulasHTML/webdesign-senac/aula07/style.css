@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(34, 31, 31);
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
+.centro {
+    background-color: rgb(106, 29, 158); 
+    border-radius: 100px; /* deixa com bordas arredondas*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1); /* sombra*/
+    padding:300px; /* tamanho do quadrado*/
+    width: 100%;
+    box-sizing: border-box; /* deixa o quadrado centralizado na tela*/
+    border-style: solid;
+    width: calc(100% - 580px); /* deixa o espaçamento entre o quadrado e a borda/tela*/
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.Login {
+    color: rgb(255, 253, 253);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 650;
+    margin-top: -200px;
+}
+
+.botao {
+    width: 165px;
+    color: blue;
+}
+
+

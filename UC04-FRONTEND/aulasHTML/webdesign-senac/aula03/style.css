@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(196, 194, 194);
+    color: whitesmoke;
+    font-family: 'McLaren', cursive;
+    
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 4em
+}
+
+p {
+    color: blueviolet;
+    font-size: larger;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid black;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+}
