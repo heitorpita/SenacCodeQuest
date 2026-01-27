@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  padding: 1.25rem 0;
+  background: linear-gradient(90deg, #9fa6b2 0%, #b3b5c1 100%);
+  text-align: center;
+  border-top: 2px solid #e1e1e1;
+  box-shadow: 0 -2px 10px 0 rgba(80, 80, 110, 0.07);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+      position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.footer p {
+  margin: 0;
+  color: #36374a;
+  font-size: 1.08rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  display: inline;
+}
+
+.footer a {
+  margin-left: 0.5rem;
+  color: #36374a;
+  background: #ebebf7;
+  padding: 0.2em 0.7em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 3px 0 rgba(80, 80, 110, 0.08);
+}
+
+.footer a:hover,
+.footer a:focus {
+  background: #c3c6e6;
+  color: #222243;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 110, 0.14);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.95rem;
+    padding: 0.9rem 0;
+  }
+}

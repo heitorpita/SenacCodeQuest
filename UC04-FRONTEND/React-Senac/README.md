@@ -1,0 +1,5 @@
+# React + Vite
+
+ATIVIDADE APRENDENDO SOBRE COMPONENTES E PAGES EM REACT JS!!!   
+
+# React-Senac

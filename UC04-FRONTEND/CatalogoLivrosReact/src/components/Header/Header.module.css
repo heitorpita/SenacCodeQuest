@@ -1,0 +1,22 @@
+.header{
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(173, 17, 17, 0.81);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.h1 {
+    display: inline;
+    margin: 1rem;
+    list-style: none;
+}
+
+.h1 {
+    text-decoration: none;
+    color: rgb(61, 57, 56);
+}

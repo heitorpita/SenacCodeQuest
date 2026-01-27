@@ -1,0 +1,299 @@
+.container {
+  min-height: 100vh;
+  background: #222;
+  border-radius: 32px;
+  max-width: 440px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Fredoka One', Arial, sans-serif;
+}
+
+.accessibilityButton {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #232323;
+  border: none;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menuIcon {
+  font-size: 26px;
+}
+
+.topRightCircle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 160px;
+  background: #368395;
+  border-bottom-left-radius: 390px;
+  border-top-right-radius: 20px;
+  z-index: 1;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+  margin-bottom: 16px;
+  width: 90%;
+  z-index: 2;
+}
+
+.profilePic {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #233a53;
+  margin-right: 12px;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.profileName {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.downArrow {
+  font-size: 15px;
+  margin-left: 3px;
+}
+
+.profileLocation {
+  color: #bbb;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.searchBtn {
+  background: #233a53;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 8px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.searchBarWrapper {
+  width: 90%;
+  background: #233a53;
+  border-radius: 20px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  margin: 16px 0 10px 0;
+  border: 1.5px solid #232323;
+  box-sizing: border-box;
+}
+
+.searchIcon {
+  color: #fff;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.searchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  padding: 6px 0;
+  outline: none;
+  font-family: inherit;
+}
+
+.filterIcon {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.petsSection {
+  width: 90%;
+  margin-top: 4px;
+}
+
+.petsTitle {
+  color: #fff;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+.petsDivider {
+  border: none;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.petCardLarge {
+  border-radius: 20px;
+  border: 4px solid #233a53;
+  overflow: hidden;
+  background: #222;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 370px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.petImgLarge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.speciesSection {
+  width: 90%;
+  margin-top: 22px;
+}
+
+.speciesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.speciesTitle {
+  color: #fff;
+  font-size: 17px;
+  font-family: inherit;
+}
+
+.seeAll {
+  color: #bbb;
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.speciesList {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+  overflow-x: auto;
+}
+
+.speciesItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 62px;
+}
+
+.speciesItem img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #233a53;
+  margin-bottom: 2px;
+}
+
+.speciesItem span {
+  color: #fff;
+  font-size: 10px;
+  margin-top: 2px;
+  font-family: inherit;
+}
+
+.matchesSection {
+  width: 90%;
+  margin-top: 18px;
+}
+
+.matchesTitle {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-family: inherit;
+}
+
+.matchesDivider {
+  border: none;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  margin: 0 0 8px 0;
+}
+
+.matchesList {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+  overflow-x: auto;
+}
+
+.matchCard {
+  border-radius: 18px;
+  border: 3px solid #233a53;
+  overflow: hidden;
+  background: #222;
+  width: 120px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.matchCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #233a53;
+  width: 100vw;
+  max-width: 440px;
+  height: 54px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+.navIcon {
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+}

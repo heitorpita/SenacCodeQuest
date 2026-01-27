@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
+
+.container {
+  min-height: 100vh;
+  background: #222;
+  border-radius: 32px;
+  max-width: 440px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  padding: 24px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accessibilityButton {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #232323;
+  border: none;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menuIcon {
+  font-size: 26px;
+}
+
+.topRightCircle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 260px;
+  background: #368395;
+  border-bottom-left-radius: 200px;
+  border-top-right-radius: 20px;
+  z-index: 1;
+}
+
+.logoContainer {
+  margin-top: 72px;
+  z-index: 2;
+}
+
+.logo {
+  width: 110px;
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Lakki Reddy";
+  color: #e75858;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 16px 0 0 0;
+  letter-spacing: 2px;
+  display: inline-block;
+  z-index: 2;
+}
+
+.titlePolvo {
+  font-family: "Lakki Reddy";
+  color: #368395;
+  font-weight: 400;
+}
+
+.form {
+  margin-top: 48px;
+  width: 84%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.label {
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Arial;
+}
+
+.labelIcon {
+  font-size: 22px;
+  margin-right: 4px;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 4px;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+.input[type="password"] {
+  margin-bottom: 36px;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 18px 0;
+  background: #233a53;
+  color: #fff;
+  font-size: 22px;
+  font-family: 'Fredoka One', Arial, sans-serif;
+  border: none;
+  border-radius: 12px;
+  margin: 32px 0 0 0;
+  cursor: pointer;
+}
+
+.signupText {
+  margin-top: 32px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  z-index: 2;
+}
+
+.signupText a {
+  color: #fff;
+  text-decoration: underline;
+}
