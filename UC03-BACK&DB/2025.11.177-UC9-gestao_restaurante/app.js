@@ -7,7 +7,7 @@ import sequelize from './src/config/db.js';
 import  UsuarioController  from "./src/modules/usuarios/controllers/usuario.controller.js"
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT
 
 app.use(express.json());
 
