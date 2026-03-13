@@ -1,115 +1,91 @@
-# 🎓 SenacCodeQuest
+# SenacCodeQuest
 
-Repositório com todos os exercícios, desafios e projetos desenvolvidos durante o curso **Técnico em Informática para Internet** no Senac.
+Repositório com todos os exercícios, projetos e desafios do curso **Técnico em Informática para Internet** no Senac. Cobre o desenvolvimento full-stack com JavaScript — da lógica de programação ao mobile.
 
-## 📚 Sobre
+## Sobre
 
 Este repositório serve como:
-- 📁 Arquivo organizado de todo o aprendizado do curso
-- 💼 Portfólio de projetos para mostrar evolução
-- 📖 Material de consulta para revisões futuras
+- Arquivo organizado de todo o aprendizado do curso
+- Portfólio de projetos para mostrar evolução
+- Material de consulta para revisões futuras
 
 ---
 
-## 🗂️ Estrutura do Repositório
+## Estrutura do Repositório
 
-```
-SenacCodeQuest/
-├── 📂 Banco_De_Dados/       # Scripts SQL e modelagem de banco
-├── 📂 Desafios/             # Projetos práticos e desafios
-│   ├── catalogo_musica_api/ # API REST de catálogo de músicas
-│   ├── feed_api/            # API de feed social com Prisma
-│   ├── MobilityX/           # Sistema de mobilidade urbana
-│   └── Desafio_Backend_.../  # Sistema de gerenciamento de tarefas
-├── 📂 POO/                  # Programação Orientada a Objetos
-├── 📂 SWAGGER-DOCS/         # Documentação de APIs com Swagger
-├── 📂 UC01-LOGICA/          # Lógica de Programação (JavaScript)
-├── 📂 UC02-BACKEND/         # Desenvolvimento Backend (Node.js/Express)
-├── 📂 UC03-BACK&DB/         # Backend + Banco de Dados (Prisma/PostgreSQL)
-└── 📂 UC04-FRONTEND/        # Desenvolvimento Frontend (React/Vite)
-    ├── adotepolvo/          # Projeto de adoção de polvos 🐙
-    ├── CatalogoLivrosReact/ # Catálogo de livros em React
-    ├── React-Senac/         # Exercícios React do curso
-    └── SuperEventos-React/  # Sistema de eventos
-```
+| Pasta | UC | Conteúdo | Tecnologias |
+|-------|----|----------|-------------|
+| [uc01-logica](./uc01-logica/) | UC01 | Lógica de programação e algoritmos | JavaScript |
+| [uc02-poo](./uc02-poo/) | UC02 | Programação Orientada a Objetos | JavaScript |
+| [uc03-backend](./uc03-backend/) | UC03 | Desenvolvimento Backend com Node.js | Node.js, Express |
+| [uc04-banco-de-dados](./uc04-banco-de-dados/) | UC04 | Banco de Dados SQL | SQL, PostgreSQL |
+| [uc05-back-db](./uc05-back-db/) | UC05 | Backend integrado com banco de dados | Node.js, Prisma, Sequelize, PostgreSQL |
+| [uc06-api-docs](./uc06-api-docs/) | UC06 | Documentação de APIs com Swagger | OpenAPI 3.0, Swagger UI |
+| [uc07-frontend](./uc07-frontend/) | UC07 | Desenvolvimento Frontend | HTML, CSS, React, Vite |
+| [uc08-react-native](./uc08-react-native/) | UC08 | Desenvolvimento Mobile | React Native, Expo |
+| [desafios](./desafios/) | — | Projetos práticos e desafios | Node.js, Express, React, PostgreSQL |
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Desafios
+
+Projetos completos desenvolvidos como aplicação prática dos conteúdos do curso:
+
+| Projeto | Descrição | Stack |
+|---------|-----------|-------|
+| [catalogo-musica-api](./desafios/catalogo-musica-api/) | API REST de catálogo de músicas | Node.js, Express |
+| [sistema-tarefas-backend](./desafios/sistema-tarefas-backend/) | Sistema de tarefas com autenticação JWT | Node.js, Express, JWT |
+| [cadastro-pet](./desafios/cadastro-pet/) | API de cadastro e gerenciamento de pets | Node.js, Express |
+| [feed-api](./desafios/feed-api/) | Feed social com posts e comentários | Node.js, Prisma, PostgreSQL |
+| [mobility-x](./desafios/mobility-x/) | Marketplace de veículos (MVP completo) | Node.js, Express, PostgreSQL, JWT |
+
+---
+
+## Tecnologias
 
 | Categoria | Tecnologias |
 |-----------|-------------|
-| **Frontend** | React, Vite, HTML, CSS, JavaScript |
+| **Linguagem** | JavaScript |
 | **Backend** | Node.js, Express.js |
-| **Banco de Dados** | PostgreSQL, MySQL, Prisma ORM |
-| **Documentação** | Swagger/OpenAPI |
+| **ORMs** | Prisma, Sequelize |
+| **Banco de Dados** | PostgreSQL, MySQL |
+| **Frontend** | React 19, Vite, HTML5, CSS3 |
+| **Mobile** | React Native, Expo |
+| **Autenticação** | JWT, bcrypt |
+| **Documentação** | Swagger / OpenAPI 3.0 |
 | **Versionamento** | Git, GitHub |
 
 ---
 
-## 🚀 Como Executar os Projetos
+## Como Executar
 
-### Projetos Node.js (Backend/APIs)
+### Projetos Backend (Node.js / APIs)
 
 ```bash
-# 1. Entre na pasta do projeto
-cd Desafios/catalogo_musica_api
-
-# 2. Instale as dependências
+cd desafios/catalogo-musica-api
 npm install
-
-# 3. Execute o projeto
 npm start
-# ou
-node app.js
 ```
 
-### Projetos React (Frontend)
+### Projetos Frontend (React)
 
 ```bash
-# 1. Entre na pasta do projeto
-cd UC04-FRONTEND/adotepolvo
-
-# 2. Instale as dependências
+cd uc07-frontend/adotepolvo
 npm install
-
-# 3. Execute em modo desenvolvimento
 npm run dev
 ```
 
-> ⚠️ Cada subprojeto pode ter seu próprio `README.md` com instruções específicas.
+> Cada subprojeto possui seu próprio `README.md` com instruções específicas de configuração.
 
 ---
 
-## 📂 Detalhes das Pastas
+## Autor
 
-### 🎯 Desafios
-Projetos práticos desenvolvidos como desafios do curso:
-- **catalogo_musica_api** - API REST para gerenciamento de músicas
-- **feed_api** - Rede social simplificada com posts e comentários
-- **MobilityX** - Sistema completo de gestão de veículos e vendas
-- **Desafio_Backend_Sistema_Tarefas** - CRUD de tarefas com autenticação
-
-### 📘 Unidades Curriculares (UC)
-- **UC01-LOGICA** - Fundamentos de lógica com JavaScript
-- **UC02-BACKEND** - Criação de APIs com Node.js e Express
-- **UC03-BACK&DB** - Integração backend com bancos de dados
-- **UC04-FRONTEND** - Interfaces web com React
-
-### 🎨 POO
-Exercícios de Programação Orientada a Objetos:
-- Classes, herança, polimorfismo
-- Projetos práticos (Banco, Livro, Jogos)
+**Heitor Pita**
+Estudante de Técnico em Informática para Internet — Senac
 
 ---
 
-## 👤 Autor
-
-**Heitor Pita**  
-Estudante de Técnico em Informática para Internet - Senac
-
----
-
-## 📄 Licença
+## Licença
 
 Este repositório é para fins educacionais.
