@@ -6,7 +6,10 @@ Desenvolvimento de aplicativos mobile com React Native e Expo.
 
 | Pasta | Projeto | Descrição |
 |-------|---------|-----------|
-| [frasesApp](./frasesApp/) | App de Frases Motivacionais | Aplicativo mobile que exibe frases motivacionais aleatórias |
+| [meuAppAula01](./meuAppAula01/) | App Aula 01 | Primeiro projeto React Native — introdução ao Expo |
+| [frasesApp](./frasesApp/) | App de Frases Motivacionais | Exibe frases motivacionais aleatórias |
+| [alcoolGasolinaApp](./alcoolGasolinaApp/) | Álcool ou Gasolina | Calcula qual combustível é mais vantajoso |
+| [imcApp](./imcApp/) | Calculadora de IMC | Calcula o Índice de Massa Corporal |
 
 ## Como Criar um Novo Projeto
 
